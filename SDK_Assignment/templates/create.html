@@ -1,0 +1,29 @@
+<div class="container-fluid mt-5">
+    <form action="/create" method="POST">
+        <table border="2">
+        <tr><td>
+            <label htmlFor="image">ImageId:</label>
+        </td>
+            <td>
+                <input type="text" name="image" required/><br>
+            </td></tr>
+       
+            <tr><td>
+                <label htmlFor="type">Instance Type:</label>
+            </td>
+                <td>
+                    <input type="text" name="type" required/><br>
+                </td></tr>
+
+                <tr><td>
+                    <label htmlFor="group">Security Group id:</label>
+                </td>
+                    <td>
+                        <input type="text" name="group" required/><br>
+                    </td></tr>
+                    
+       </table> <br><br>
+                  <input type="submit" value="Create Instance">
+    </form>
+</div>
+

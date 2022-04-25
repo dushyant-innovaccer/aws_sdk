@@ -1,0 +1,23 @@
+Submitted By: Dushyant Gupta
+
+Technology Used: Python, Flask, Boto3, AWS_SDK, HTML
+
+Functions Implemented:
+
+  *For EC2:
+    => List all instances
+    => Create a new instance
+    => Terminating an existing instance
+    => Start an existing instance
+    => Stop an existing instance
+
+
+* Navigate to working directory using cd comand
+* Build an image from a Dockerfile using -> sudo docker build -t aws_sdk:1.0 .
+* Tag image using: sudo docker tag aws_sdk dushyantgupta72/aws_sdk:1.0
+* Image pushed to dockerhub - sudo docker push dushyantgupta72/aws_sdk:1.0
+* Make container from image: sudo docker run --name awscontainer -p 6400:6000 -e AWS_ACCESS_KEY_ID=AKIA5DRQKNCAEXKFXC6K -e AWS_SECRET_ACCESS_KEY=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 -e AWS_DEFAULT_REGION=us-east-1 dushyantgupta72/aws_sdk:1.0
+
+DockerHub Link: https://hub.docker.com/repository/docker/dushyantgupta72/aws_sdk
+
+GitHub Link:
